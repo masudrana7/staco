@@ -1,0 +1,91 @@
+.case-studies-section{
+    margin-top: 90px;
+    margin-bottom: 115px;
+    background: color(blueGray);
+    .case-studies-left{
+        max-width: 496px;
+        width: 100%;
+        padding: 125px 0px 140px 0px;
+        h2{
+            font-family: fontfamily(montserratAlternates);
+            @include textStyle(40px, 700, 60px);
+            color: color(title);
+            margin-bottom: 35px;
+        }
+    }
+    
+    .case-studies-brands{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .case-studies-item{
+            width: 50%;
+            padding-top: 60px;
+            border-left: 1px solid rgba(0, 0, 0, 0.1);
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+            min-height: 550px;
+            max-height: 585px;
+            position: relative;
+            overflow: hidden;
+            &::before{
+                content: '';
+                height: 200px;
+                width: 100%;
+                position: absolute;
+                background: linear-gradient(180deg, #EEEFFB 0%, rgba(238, 239, 251, 0) 100%);
+                top: 0px;
+                left: 0px;
+                z-index: 2;
+            }
+            &::after{
+                content: '';
+                height: 200px;
+                width: 100%;
+                position: absolute;
+                background: linear-gradient(180deg, rgba(238, 239, 251, 0) 0%, #EEEFFB 100%);
+                bottom: 0px;
+                left: 0px;
+                z-index: 2;
+            }
+            &:nth-last-child(1){
+                border-left: none;
+            }
+            ul {
+                padding: 0;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                overflow: hidden;
+                &.slide-top{
+                    animation: SlideTop 4s infinite linear;
+                }
+                &.slide-bottom{
+                    animation: SlideBottom 4s infinite linear;
+                }
+                li{
+                    min-height: 24px;
+                    margin-bottom: 85px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes SlideTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes SlideBottom {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}

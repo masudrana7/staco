@@ -1,0 +1,23 @@
+.manage-team-section{
+    margin-bottom: 150px;
+}
+.manage-team-content{
+    margin-top: 71px;
+}
+.manage-team-card{
+    margin-bottom: 60px;
+    h6 {
+        margin-top: 25px;
+        margin-bottom: 13px;
+        font-family: fontfamily(montserratAlternates);
+        @include textStyle(18px, 700, 26px);
+        color: color(title);
+    }
+    p {
+        max-width: 323px;
+        width: 100%;
+        fontfamily: (dmSans);
+        @include textStyle(15px, 500, 30px);
+        color: color(textColor);
+    }
+}

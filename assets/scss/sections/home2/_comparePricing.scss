@@ -1,0 +1,223 @@
+/*-- compare-price-section Start --*/
+.compare-price-section {
+    position: relative;
+    z-index: 2;
+}
+.compare-price-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 770px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+    & .vs {
+        background: color(whiteColor);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 11;
+        & h6 {
+            font-size: 24px;
+            line-height: 26px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            & span {
+                position: relative;
+                z-index: 1;
+            }
+            &:after {
+                content: "";
+                background: color(whiteColor);
+                position: absolute;
+                height: 82px;
+                width: 40px;
+                z-index: 0;
+            }
+        }
+    }
+    .compare-price-card {
+        background: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 40px;
+        max-width: 365px;
+        width: 100%;
+        margin: auto;
+        min-height: 525px;
+        position: relative;
+        .compare-price-card-icon {
+            position: absolute;
+            right: 27px;
+            top: 27px;
+            .icon {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .compare-price-dropdown {
+        width: 170px;
+        height: 50px;
+        position: relative;
+        background: color(bgDropdown);
+        border-radius: 5px;
+        margin-bottom: 25px;
+        &::after {
+            content: url("../images/icons/dropdown-toggle.svg");
+            position: absolute;
+            right: 20px;
+            top: 13px;
+        }
+        & select {
+            @include textStyle(18px, 700, 26px);
+            color: color(title);
+            width: 100%;
+            border: none;
+            outline: none;
+            appearance: none;
+            background: transparent;
+            padding: 12px 14px;
+            & option {
+                font-family: fontfamily(dmSans);
+                @include textStyle(18px, 700, 26px);
+                color: color(title);
+            }
+        }
+    }
+    & h5 {
+        font-family: fontfamily(dmSans);
+        @include textStyle(18px, 700, 26px);
+        color: color(title);
+        margin-bottom: 33px;
+    }
+    & h2 {
+        font-family: fontfamily(dmSans);
+        @include textStyle(18px, 500, 26px);
+        & sup {
+            font-family: fontfamily(montserratAlternates);
+            @include textStyle(18px, 600, 26px);
+            top: -15px;
+        }
+        & strong {
+            font-family: fontfamily(montserratAlternates);
+            @include textStyle(36px, 700, 26px);
+            margin-right: 7px;
+        }
+
+        & span {
+            @include textStyle(18px, 400, 26px);
+            color: color(primary);
+        }
+    }
+    & .compare-list {
+        margin-top: 26px;
+        margin-bottom: 30px;
+        & ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+            & li {
+                padding: 0 0 18px;
+                &:last-child {
+                    padding-bottom: 0;
+                }
+                &:before {
+                    content: url("../images/icons/check-green.svg");
+                    margin-right: 11px;
+                }
+            }
+        }
+    }
+    & .compare-price-list {
+        & ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+            & li {
+                @include textStyle(16px, 500, 26px);
+                padding: 16px 0px;
+                height: 106px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                &:nth-last-child(1) {
+                    border-bottom: none;
+                }
+                & strong {
+                    color: color(title);
+                }
+                & span {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .compare-price-icons1 {
+        position: absolute;
+        left: -180px;
+        animation: jumpingDown 4.5s infinite;
+    }
+    .compare-price-icons2 {
+        position: absolute;
+        position: absolute;
+        left: -25px;
+        top: 30%;
+        z-index: 1;
+    }
+    .compare-price-icons3 {
+        position: absolute;
+        right: -200px;
+        z-index: 1;
+        animation: jumpingUp 5s infinite;
+    }
+    .compare-price-icons4 {
+        position: absolute;
+        right: -80px;
+        top: 20%;
+    }
+}
+
+@keyframes jumpingDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes jumpingUp {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.premium-price,
+.professional-price {
+    display: none;
+}
+/*-- compare-price-section End --*/

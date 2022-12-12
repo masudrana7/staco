@@ -1,0 +1,78 @@
+.v6-bottom-section {
+  background: color(v6BG);
+}
+
+/*-- customers-quote-section --*/
+.customers-quote-section {
+  padding-top: 120px;
+  padding-bottom: 132px;
+}
+
+.customers-quote-card {
+  background: color(whiteColor);
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  height: auto;
+}
+
+.customers-quote-card .customers-quote-content {
+  padding-top: 100px;
+  padding-bottom: 49px;
+}
+
+.customers-quote-img {
+  position: relative;
+  min-height: 298px;
+  max-width: 320px;
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.customers-quote-img .customers-quote-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0px;
+  right: 0px;
+  z-index: 0;
+}
+
+.customers-quote-img .customers-quote-bg img {
+  height: 100%;
+  width: 100%;
+}
+
+.customers-quote-img .quote-customers-img {
+  position: relative;
+  z-index: 2;
+}
+
+.customers-quote-card-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 38px;
+}
+
+.customers-quote-card-footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1070px;
+  width: 100%;
+  margin: auto;
+}

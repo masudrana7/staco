@@ -1,0 +1,131 @@
+.footer-testimonial-section {
+    background: url(../images/footer/footer-testimonial-bg.svg);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    min-height: 551px;
+    margin-bottom: 107px;
+    .footer-testimonial-left {
+        padding-top: 35px;
+        h4 {
+            margin-top: 55px;
+            margin-bottom: 61px;
+            font-family: fontfamily(dmSans);
+            @include textStyle(24px, 700, 45px);
+            color: color(whiteColor);
+            max-width: 583px;
+        }
+        form {
+            background: color(whiteColor);
+            border-radius: 35px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            input {
+                font-family: fontfamily(dmSans);
+                @include textStyle(16px, 500, 26px);
+                color: color(textColor);
+                padding: 10px 14px;
+                height: 100%;
+                width: 100%;
+                max-width: 296px;
+                border: none;
+                outline: none;
+
+                &::placeholder {
+                    /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: color(title);
+                    /* Firefox */
+                }
+
+                &:-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: color(title);
+                }
+
+                &::-ms-input-placeholder {
+                    /* Microsoft Edge */
+                    color: color(title);
+                }
+            }
+            button {
+                background: color(btnColor);
+                color: color(btnTextColor);
+                padding: 12px 24px;
+                font-family: fontfamily(dmSans);
+                @include textStyle(15px, 700, 26px);
+                border-radius: 25px;
+                min-width: max-content;
+                transition: 0.5s;
+            }
+        }
+        &.v8 {
+            padding-top: 60px;
+            padding-bottom: 88px;
+            form {
+                button {
+                    background: color(v8Title2);
+                    color: color(v8SeconderyColor);
+                    &:hover {
+                        color: #ffffff;
+                        background: color(v8SeconderyColor);
+                    }
+                }
+            }
+        }
+        ul {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            max-width: 370px;
+            width: 100%;
+            margin-top: 16px;
+            li {
+                width: 50%;
+                font-family: fontfamily(dmSans);
+                @include textStyle(14px, 500, 26px);
+                color: color(whiteColor);
+                svg {
+                    color: #ffffff;
+                    margin-right: 11px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .footer-testimonial-right {
+        text-align: right;
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+        .footer-testimonial-right-text {
+            text-align: left;
+            position: absolute;
+            left: 120px;
+            bottom: 120px;
+            h5 {
+                font-family: fontfamily(dmSans);
+                @include textStyle(18px, 700, 30px);
+                color: color(whiteColor);
+            }
+            p {
+                font-family: fontfamily(dmSans);
+                @include textStyle(15px, 500, 30px);
+                color: color(whiteColor);
+            }
+        }
+    }
+    &.v8 {
+        background: url(../images/index8/footer-testimonial-bg.png);
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        min-height: auto;
+        margin-bottom: 107px;
+        .footer-testimonial-icon {
+            opacity: 0;
+        }
+    }
+}

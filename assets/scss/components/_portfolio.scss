@@ -1,0 +1,57 @@
+.portfolio-section{
+    margin-top: 120px;
+    margin-bottom: 57px;
+    padding: 0px 55px;
+    .portfolio-title{
+        text-align: center;
+        p{
+            font-family: fontfamily(dmSans);
+            @include textStyle(18px, 700, 30px);
+            color: color(primary);
+            letter-spacing: 0.2em;
+        }
+        .portfolio-subtitle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            h2 {
+                font-family: fontfamily(montserratAlternates);
+                @include textStyle(40px, 700, 60px);
+                color: color(title);
+                text-align: right;
+            }
+            h3{
+                text-align: left;
+                font-family: fontfamily(montserratAlternates);
+                @include textStyle(36px, 700, 60px);
+                color: color(iconColor2);
+                span{
+                    @include textStyle(16px, 600, 60px);
+                    color: color(title);
+                }
+            }
+        }
+    }
+    .portfolio-gallery-section{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .portfolio-gallery{
+        margin-top: 42px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .portfolio-img{
+            flex: 0 0 auto;
+            width: 430px;
+            height: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

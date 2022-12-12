@@ -1,0 +1,88 @@
+.v7body-section {
+    position: relative;
+    z-index: 5;
+    background: #ffffff;
+    margin-bottom: 650px;
+}
+.hero-section-v6 {
+    padding-top: 283px;
+    padding-bottom: 50px;
+    text-align: center;
+    .v6hero-img {
+        position: relative;
+        max-width: 1500px;
+        padding: 0px 25px;
+        margin: auto;
+        margin-top: -12%;
+        z-index: 0;
+    }
+}
+.v7hero-section-text {
+    position: relative;
+    z-index: 2;
+    .banner-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 21px;
+        margin-bottom: 36px;
+        h2 {
+            @include textStyle(70px, 700, 80px);
+            width: max-content !important;
+            &.slick-current {
+                &.one {
+                    background: linear-gradient(90deg, #f7578c 2.17%, #00aaff 100%);
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                &.two {
+                    background: linear-gradient(90deg, #00aaff 1.92%, #2bd9d9 100%);
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                &.three {
+                    background: linear-gradient(90deg, #2bd9d9 0%, #39d393 100%);
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+        .slick-list {
+            padding: 0 !important;
+        }
+
+        .slick-track {
+            width: 100% !important;
+            transform: translate3d(0px, 0px, 0px) !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            max-width: 910px;
+            width: 100%;
+        }
+    }
+    p {
+        max-width: 569px;
+        margin: auto;
+        text-align: center;
+        font-size: 18px;
+        line-height: 36px;
+    }
+}
+.v6hero-section-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 58px;
+    position: relative;
+    z-index: 2;
+}

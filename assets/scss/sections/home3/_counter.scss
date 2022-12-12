@@ -1,0 +1,31 @@
+/*-- counter-section start --*/
+.counter-section {
+    padding: 65px 0;
+}
+/*-- counter-card --*/
+.counter-card {
+    width: 100%;
+    height: 220px;
+    border-radius: 30px;
+    background-color: #eceff1;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: url("../images/icons/shape-left.svg");
+        top: -30px;
+        left: -30px;
+        animation: badgeAnimate 2s infinite;
+    }
+    h2 {
+        color: color(primary);
+    }
+    p {
+        @include textStyle(18px, 500, 40px);
+        color: color(title);
+    }
+}
+/*-- counter-section end --*/

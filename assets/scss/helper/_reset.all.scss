@@ -1,0 +1,264 @@
+/*-- reset style start --*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: fontfamily(dmSans);
+    font-style: normal;
+    @include textStyle(15px, 500, 30px);
+    color: color(textColor);
+    background-color: color(whiteColor);
+}
+.bg-gray {
+    background: color(bodyBG2);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: fontfamily(montserratAlternates);
+    font-weight: 700;
+    letter-spacing: 0;
+    color: color(title);
+    line-height: 1.46;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 15px;
+    font-weight: 500;
+}
+body .mt--60 {
+    margin-top: -60px;
+}
+.xl-mb-10 {
+    margin-bottom: 10px;
+}
+.xl-mb-20 {
+    margin-bottom: 20px;
+}
+.xl-mb-25 {
+    margin-bottom: 25px;
+}
+.xl-mb-30 {
+    margin-bottom: 30px !important;
+}
+.xl-mb-40 {
+    margin-bottom: 40px !important;
+}
+.xl-pl-0 {
+    padding-left: 0;
+}
+
+::selection {
+    background-color: color(primary);
+    color: color(whiteColor);
+}
+.row-gap50 {
+    row-gap: 50px;
+}
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.offer-text {
+    margin-top: 28px;
+    font-family: fontfamily(dmSans);
+    @include textStyle(18px, 500, 26px);
+    color: color(iconColor2);
+}
+
+a,
+.btn,
+button {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+    &:focus {
+        text-decoration: none;
+        color: inherit;
+        outline: none;
+        border: none;
+    }
+}
+
+*:focus {
+    outline: none;
+}
+
+button,
+input[type="submit"] {
+    cursor: pointer;
+}
+
+button {
+    border-radius: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.btn {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*-- custom bootstrap style start --*/
+@media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1170px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+/*-- custom bootstrap style end --*/
+
+/*-- color style --*/
+.color-theme {
+    color: color(primary) !important;
+}
+/*-- bg color style start --*/
+.bg-primay {
+    background-color: color(primary);
+}
+.white-color {
+    color: color(whiteColor);
+}
+.body-color {
+    color: color(textColor);
+}
+.bg-aero-blue {
+    background-color: color(aeroBlue);
+}
+.green-color {
+    color: color(primary6Deep);
+}
+.check-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*-- bg color style end --*/
+
+/*-- Lib custom Start --*/
+.row {
+    margin: 0px -15px !important;
+}
+.col-xxl-1,
+.col-xxl-2,
+.col-xxl-3,
+.col-xxl-4,
+.col-xxl-5,
+.col-xxl-6,
+.col-xxl-7,
+.col-xxl-8,
+.col-xxl-9,
+.col-xxl-10,
+.col-xxl-11,
+.col-xxl-12,
+.col-xl-1,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    padding: 0px 15px !important;
+}
+/*-- Lib custom End --*/
+
+/*-- reset style end --*/

@@ -1,0 +1,49 @@
+.header-top {
+    background: url(../images/hero/top-header-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 111;
+    .header-top-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 35px;
+        .header-top-timer {
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                max-width: 228px;
+                width: 100%;
+                gap: 30px;
+                li {
+                    color: color(whiteColor);
+                    span {
+                        margin-left: 4px;
+                    }
+                }
+            }
+        }
+        .header-top-right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 15px;
+        }
+        p {
+            margin-bottom: 0;
+            color: color(whiteColor);
+        }
+    }
+}
+.nav-expanded .staco-home3-canva {
+    margin-top: 90px;
+}

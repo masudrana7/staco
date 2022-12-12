@@ -1,0 +1,120 @@
+.v7-footer-area {
+    position: fixed;
+    z-index: 0;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+.footer-section-v7 {
+    background: color(bgFooter);
+    padding-top: 99px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    .footer-section-grain-texture {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.footer-section-mash-gard {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    //transform: translate(-45%, -60%);
+    transform: translate(-50%, -50%);
+    width: 827px;
+    height: 566px;
+}
+
+.footer-v7-content {
+    position: relative;
+    z-index: 4;
+}
+.footer-v7-text {
+    text-align: center;
+    max-width: 535px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 60px;
+    h2 {
+        margin-bottom: 45px;
+        color: color(whiteColor);
+    }
+    .leav-msg-btn {
+        border-radius: 50px;
+        width: 220px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: capitalize;
+        transition: 0.5s;
+        margin: auto;
+    }
+}
+
+.v7footer-contact-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 45px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    .v7footer-card-text {
+        color: color(whiteColor);
+        p {
+            text-transform: uppercase;
+        }
+        h6 {
+            font-size: 18px;
+            line-height: 36px;
+            margin-bottom: 0;
+            color: #fff;
+        }
+        &.text-right {
+            p {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.v7-main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0px;
+    .back-to-top-btn {
+        margin: auto;
+        .icon {
+            transform: rotate(-90deg);
+            font-size: 28px;
+            color: #ffffff;
+        }
+    }
+    .copyright-text {
+        color: color(whiteColor);
+        opacity: 70%;
+        width: 47%;
+        &:hover {
+            opacity: 100%;
+        }
+    }
+    .privacy-menu {
+        width: 47%;
+    }
+}

@@ -1,0 +1,91 @@
+.faq-section-4 {
+    padding: 132px 0 135px 0;
+    position: relative;
+    z-index: 0;
+
+    &::before {
+        position: absolute;
+        z-index: -1;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/bg-question.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+}
+
+.faq-section-4-title {
+    margin-bottom: 30px;
+    text-align: center;
+    h3 {
+        margin-bottom: 16px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        @include textStyle(18px, 700, 30px);
+        color: color(primary);
+    }
+
+    h2 {
+        font-family: fontfamily(montserratAlternates);
+        @include textStyle(40px, 700, 60px);
+        color: color(title);
+    }
+}
+
+.faq-section-4-tab {
+    .nav.nav-tabs {
+        border-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .nav-link {
+        background: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 26px;
+        padding: 12px 28px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+        transition: 0.3s;
+        &.active {
+            border: 1px solid transparent;
+            background-color: #e7f1fc;
+            color: #0095ff;
+        }
+    }
+
+    .tab-content {
+        margin-top: 50px;
+    }
+}
+
+.faq-section-4-bottom {
+    margin-top: 72px;
+    text-align: center;
+
+    h4 {
+        font-family: fontfamily(montserratAlternates);
+        @include textStyle(18px, 700, 30px);
+        color: color(blackColor);
+    }
+
+    h5 {
+        font-size: 15px;
+        line-height: 30px;
+        color: color(textColor);
+    }
+
+    .text-link {
+        margin: 15px auto 0;
+    }
+}

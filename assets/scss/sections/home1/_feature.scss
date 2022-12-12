@@ -1,0 +1,67 @@
+/*-- feature-section start --*/
+.feature-section {
+    padding: 118px 0 40px 0;
+}
+
+/*-- section-title style --*/
+.section-title {
+    margin-bottom: 42px;
+    &.section-title-left {
+        text-align: left;
+    }
+    h6 {
+        margin-top: 12px;
+    }
+    h5 {
+        font-family: fontfamily(dmSans);
+        @include textStyle(18px, 500, 26px);
+        margin-top: 12px;
+    }
+}
+
+/*-- feature-card style --*/
+.feature-card {
+    margin-bottom: 30px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 30px;
+    position: relative;
+    z-index: 0;
+
+    .feature-card-shape {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: 0.3s;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &:hover,
+    &.active {
+        .feature-card-shape {
+            opacity: 1;
+        }
+    }
+
+    &-icon {
+        margin-bottom: 30px;
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    h2 {
+        margin-bottom: 10px;
+        @include textStyle(18px, 600, 26px);
+    }
+}
+
+/*-- feature-section end --*/

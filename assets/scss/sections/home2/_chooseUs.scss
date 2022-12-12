@@ -1,0 +1,20 @@
+/*-- choose-us-section Start --*/
+.choose-us-section {
+    padding-bottom: 132px;
+    .choose-us-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+
+        .choose-us-text {
+            max-width: 310px;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 90px;
+        }
+    }
+}
+/*-- choose-us-section End --*/

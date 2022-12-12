@@ -1,0 +1,56 @@
+/*-- badge style start --*/
+.hero-badge {
+    border-radius: 0px 20px 0px 0px;
+    background-color: color(badgeColor);
+    padding: 0px 10px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: url("../images/icons/badge-icon.svg");
+        top: -52px;
+        right: -32px;
+        animation: badgeAnimate 1.5s infinite ease-in-out;
+    }
+}
+
+@keyframes badgeAnimate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.marketing-badge {
+    border-radius: 0px 20px 0px 0px;
+    background-color: color(badgeColor2);
+    padding: 0 10px;
+    &.v2 {
+        display: inline-block;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: url("../images/icons/polygon.svg");
+            top: -15px;
+            right: -15px;
+            width: 24px;
+            height: 24px;
+            line-height: 0;
+            animation: badgeAnimate 2s infinite ease-in-out;
+        }
+    }
+}
+
+.theme-badge {
+    border-radius: 100px;
+    background-color: color(badgeColor);
+    padding: 5px 10px;
+    text-transform: uppercase;
+    @include textStyle(13px, 700, 36px);
+    color: color(whiteColor);
+}
+/*-- badge style end --*/

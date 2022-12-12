@@ -1,0 +1,222 @@
+.benefits-section {
+    background: color(whiteColor);
+}
+
+.benefits-content {
+    padding-top: 28px;
+}
+/*-- benefits-img --*/
+.benefits-left-section {
+    background: color(v6BG);
+    border-radius: 30px;
+}
+.benefits-img-bg {
+    background: transparent;
+    padding: 40px;
+    position: relative;
+    .benefits-img-tag {
+        position: absolute;
+        background: color(primary6);
+        color: color(textColor);
+        border-radius: 20px;
+        padding: 10px 23px;
+        z-index: 111;
+        &1 {
+            right: 40px;
+            top: 20%;
+        }
+        &2 {
+            right: 40px;
+            top: 31%;
+        }
+        &3 {
+            left: 20%;
+            bottom: 40px;
+        }
+    }
+
+    &.benefits-img-bg2 {
+        .benefits-img-tag {
+            &1 {
+                left: 40px;
+                top: 8%;
+                right: auto !important;
+            }
+
+            &2 {
+                left: 40px;
+                top: 21%;
+                right: auto !important;
+            }
+
+            &3 {
+                left: 40px;
+                top: 37%;
+                bottom: auto !important;
+            }
+        }
+        .benefits-img-chart {
+            position: absolute;
+            left: 40px;
+            z-index: 111;
+            bottom: 16%;
+        }
+        .benefits-img {
+            margin-left: auto;
+        }
+    }
+
+    &.benefits-img-bg3 {
+        .benefits-img-tag {
+            &1 {
+                right: 40px;
+                top: auto;
+                bottom: 35%;
+            }
+
+            &2 {
+                right: 40px;
+                top: auto;
+                bottom: 21%;
+            }
+
+            &3 {
+                right: 40px;
+                left: auto;
+                top: auto;
+                bottom: 8%;
+            }
+        }
+        .benefits-img-chart {
+            position: absolute;
+            left: 40px;
+            z-index: 111;
+            bottom: 16%;
+            left: 40px;
+        }
+    }
+
+    &.benefits-img-bg4 {
+        .benefits-img-tag {
+            &1 {
+                left: 20%;
+                top: 9%;
+                right: auto !important;
+            }
+
+            &2 {
+                left: auto !important;
+                top: 9%;
+                right: 40px;
+            }
+
+            &3 {
+                left: auto !important;
+                top: 35%;
+                right: 40px;
+                bottom: auto;
+            }
+        }
+        .benefits-img-chart {
+            position: absolute;
+            left: auto;
+            right: 40px;
+            z-index: 111;
+            bottom: 16%;
+        }
+    }
+
+    .benefits-img {
+        border-radius: 10px;
+        border-bottom-right-radius: 50%;
+        max-width: 90%;
+        > img {
+            height: 100%;
+            width: 390px;
+            max-width: 100%;
+            overflow: hidden;
+        }
+    }
+}
+
+/*-- benefits-faq --*/
+.benefits-faq {
+    padding-left: 50px;
+    .slider-benefits-content {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .benefits-slider-nav {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 26px 0px;
+        .benefits-nav-btn {
+            font-family: fontfamily(montserratAlternates);
+            @include textStyle(18px, 700, 24px);
+            color: color(title);
+            position: relative;
+            width: 100%;
+            text-align: left;
+            &::after {
+                position: absolute;
+                content: url(../images/icons/accordion-plus.png);
+                top: 0px;
+                right: 20px;
+                width: 20px;
+                height: 20px;
+                transition: 0.3s;
+                transform: rotate(0deg);
+            }
+        }
+        .benefits-nav-content {
+            height: 0px;
+            overflow: hidden;
+            transition: 0.5s;
+            p {
+                padding-top: 15px;
+                max-width: 515px;
+                width: 100%;
+            }
+        }
+        &.slick-current {
+            padding-bottom: 22px;
+            opacity: 1;
+            position: relative;
+            &::after {
+                position: absolute;
+                bottom: -1px;
+                left: 0px;
+                content: "";
+                height: 1px;
+                width: 30%;
+                background: color(primary6Deep);
+                animation: lineProgress 3.5s linear infinite;
+                -webkit-animation: lineProgress 3.5s linear infinite;
+            }
+            .benefits-nav-btn {
+                &::after {
+                    content: url(../images/icons/accordion-minus-green.png);
+                    top: -7px;
+                    transform: rotate(360deg);
+                }
+            }
+
+            .benefits-nav-content {
+                height: auto;
+            }
+        }
+    }
+
+    .slick-list {
+        padding: 0 !important;
+    }
+    .slick-slide {
+        width: 100% !important;
+    }
+    .slick-track {
+        width: 100% !important;
+        transform: translate3d(0px, 0px, 0px) !important;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+}

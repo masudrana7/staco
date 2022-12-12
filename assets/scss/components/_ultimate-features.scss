@@ -1,0 +1,126 @@
+.ultimate-features-section {
+    margin-bottom: 140px;
+    .ultimate-features-content {
+        margin-top: 50px;
+    }
+}
+
+.ultimate-features-card {
+    background: color(whiteColor);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+
+    h5 {
+        margin-top: 18px;
+        margin-bottom: 10px;
+        font-family: fontfamily(montserratAlternates);
+        @include textStyle(15px, 700, 26px);
+        color: color(title);
+    }
+
+    p {
+        font-family: fontfamily(dmSans);
+        @include textStyle(15px, 500, 30px);
+        color: color(textColor);
+    }
+}
+
+.ultimate-features-card2{
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    &.blue{
+        background: color(featuresCardBG);
+    }
+    &.green{
+        background: color(featuresCardBG2);
+    }
+    &.purple{
+        background: color(featuresCardBG3);
+    }
+    &.white{
+        background: color(featuresCardBG4);
+        .overlay{
+            background: transparent;
+        }
+    }
+    .overlay{
+        background: linear-gradient(147.66deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+        height: 100%;
+        width: 100%;
+        padding: 30px;
+    }
+    .ultimate-features-img {
+        width: 100%;
+        border-radius: 20px;
+        margin-bottom: 33px;
+        overflow: hidden;
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    
+    .ultimate-features-text{
+        h5 {
+            font-family: fontfamily(montserratAlternates);
+            @include textStyle(18px, 700, 26px);
+            color: color(whiteColor);
+            margin-bottom: 12px;
+            &.dark{
+                color: color(title);
+            }
+        }
+        p{
+            margin-bottom: 30px;
+            font-family: fontfamily(dmSans);
+            @include textStyle(15px, 500, 30px);
+            color: color(whiteColor);
+            &.dark{
+                color: color(textColor);
+            }
+        }
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: 0.3s;
+            h6 {
+                font-family: fontfamily(dmSans);
+                @include textStyle(15px, 700, 30px);
+                color: color(whiteColor);
+                transition: 0.3s;
+                &.dark {
+                    color: color(title);
+                }
+            }
+            button{
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.2);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.3s;
+                &.dark {
+                    background: rgba(0, 0, 0, 0.1);
+                    img{
+                        filter: brightness(0.1);
+                    }
+                }
+            }
+            &:hover{
+                h6{
+                    opacity: 0.8;
+                }
+                button{
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+    
+}

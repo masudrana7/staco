@@ -1,0 +1,101 @@
+/*-- brands-section start --*/
+.brands-section {
+    padding: 93px 0 0 0;
+    .container {
+        position: relative;
+    }
+    &.v8 {
+        padding: 60px 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        margin-bottom: 125px;
+    }
+}
+
+/*-- brands-section-title style --*/
+.brands-section-title {
+    margin-bottom: 25px;
+    text-align: center;
+    &.brands-section-title-index2 {
+        text-align: left;
+    }
+    h2 {
+        @include textStyle(18px, 600, 30px);
+    }
+    &.brands-section-title-index8 {
+        text-align: left;
+        position: absolute;
+        left: 0px;
+        top: 2px;
+        background: #ffffff;
+        z-index: 2;
+        padding-right: 30px;
+    }
+}
+
+/*-- brands-slider style --*/
+.brands-slider {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+
+    &-container {
+        width: calc(200px * 12);
+        display: flex;
+        align-items: center;
+        gap: 0px;
+        animation: smoothSlider 25s infinite linear;
+    }
+    .slider-item {
+        width: 200px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &::before {
+        position: absolute;
+        z-index: 1;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 120px;
+        height: 100%;
+        background: linear-gradient(270deg, color(whiteColor) 0%, rgba(255, 255, 255, 0) 100%);
+        transform: rotate(-180deg);
+    }
+
+    &::after {
+        position: absolute;
+        z-index: 1;
+        content: "";
+        top: 0;
+        right: 0;
+        width: 120px;
+        height: 100%;
+        background: linear-gradient(270deg, color(whiteColor) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+    &.v8 {
+        height: 36px;
+        &::before {
+            left: 100px;
+        }
+        .slider-item {
+            height: 36px;
+            max-width: 178px;
+            img {
+                max-width: 105px;
+            }
+        }
+    }
+}
+@keyframes smoothSlider {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 6));
+    }
+}
+/*-- brands-section end --*/

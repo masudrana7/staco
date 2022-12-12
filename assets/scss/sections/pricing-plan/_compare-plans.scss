@@ -1,0 +1,165 @@
+.compare-plans-section {
+    background: color(whiteColor);
+    padding-top: 115px;
+    padding-bottom: 140px;
+    .compare-plans-title {
+        margin-bottom: 45px;
+    }
+}
+.compare-plans-table-section {
+    .compare-plans-table {
+        width: 100%;
+        overflow-x: hidden;
+        .table-header-sticky {
+            background: color(whiteColor);
+            width: 100% !important;
+            top: 0px !important;
+        }
+        ol {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            overflow: hidden;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            margin: 0;
+            li {
+                padding-bottom: 10px;
+                vertical-align: bottom;
+                width: 18%;
+                min-width: 210px;
+                margin-top: 33px;
+                padding: 0px 30px 10px 30px;
+                padding-top: 11px;
+                display: block;
+                &:nth-child(1) {
+                    width: 46%;
+                    padding-left: 0px;
+                }
+
+                &:nth-last-child(2) {
+                    background: rgba(0, 0, 0, 0.03);
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                }
+
+                h5 {
+                    font-family: fontfamily(dmsans);
+                    text-transform: uppercase;
+                    span {
+                        text-transform: lowercase;
+                        font-size: 12px;
+                        margin-left: 13px;
+                    }
+                }
+
+                button {
+                    max-width: 150px;
+                    width: 100%;
+                    height: 40px;
+                    border: 2px solid rgba(0, 149, 255, 0.3);
+                    border-radius: 50px;
+                    font-weight: 700;
+                    color: color(primary);
+                    transition: 0.3s;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 0;
+                    margin: 10px 0px;
+
+                    &::before {
+                        position: absolute;
+                        z-index: -1;
+                        content: "";
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50px;
+                        background-color: color(primary);
+                        transform: translateX(-100%);
+                        transition: 0.3s;
+                    }
+
+                    &:hover {
+                        border: 2px solid color(primary);
+                        color: color(whiteColor);
+
+                        &::before {
+                            transform: translateX(0%);
+                        }
+                    }
+                }
+            }
+        }
+
+        .table-body {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-top: 0;
+            ul {
+                padding: 0;
+                list-style: none;
+                margin: 0;
+                li {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    margin-bottom: 10px;
+                    b {
+                        padding-bottom: 10px;
+                        padding-top: 33px;
+                        color: color(title);
+                        font-weight: 700;
+                    }
+                }
+            }
+            .table-col1,
+            .table-col2,
+            .table-col3,
+            .table-col4 {
+                padding-top: 25px;
+            }
+            .table-col1 {
+                width: 46%;
+                padding-left: 0px;
+                padding-bottom: 20px;
+            }
+            .table-col2 {
+                width: 18%;
+                min-width: 210px;
+                padding-bottom: 20px;
+                ul {
+                    li {
+                        padding: 0px 30px;
+                    }
+                }
+            }
+            .table-col3 {
+                width: 18%;
+                min-width: 210px;
+                background: rgba(0, 0, 0, 0.03);
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-bottom: 20px;
+                ul {
+                    li {
+                        padding: 0px 30px;
+                    }
+                }
+            }
+            .table-col4 {
+                width: 18%;
+                min-width: 210px;
+                padding-bottom: 20px;
+                ul {
+                    li {
+                        padding: 0px 30px;
+                    }
+                }
+            }
+        }
+    }
+}

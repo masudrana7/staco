@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/*------------------------------------------------------------------------------------
+Theme Name: staco
+Theme URL: #
+Author: uigigs
+Author URL: https://themeforest.net/user/uigigs/portfolio
+version: 1.0.0
+------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------
+CSS table of content
+
+01. Settings style
+02. Base style
+03. Sections style
+04. Components style
+05. Utilities style
+
+------------------------------------------------------------------------------------*/
+
+/*--------------------------------
+01. Settings style
+--------------------------------*/ 
+@import './settings/variables';
+
+
+/*--------------------------------
+02. Base style
+--------------------------------*/
+@import './helper/reset.all'; 
+@import './helper/helper.theme';
+
+/*--------------------------------
+03. Sections style
+--------------------------------*/
+@import './sections/header/header';
+@import './sections/header/top-header';
+@import './sections/header/canvasMenu';
+
+@import './sections/hero/hero';
+@import './sections/hero/hero3';
+@import './sections/hero/hero4';
+@import './sections/hero/hero5';
+@import './sections/hero/hero6';
+@import './sections/hero/hero7';
+
+@import './sections/footer/footer';
+@import './sections/footer/footer6';
+@import './sections/footer/footerv7';
+
+// @import './sections/headline/headline';
+
+/*-- home page 1 style start --*/
+@import './sections/home1/brands';
+@import './sections/home1/feature';
+@import './sections/home1/usability';
+@import './sections/home1/marketing';
+@import './sections/home1/testimonial';
+@import './sections/home1/integrate';
+@import './sections/home1/faq';
+@import './sections/home1/pricing';
+/*-- home page 1 style end --*/
+
+/*-- home page 2 style start --*/
+@import './sections/home2/feature2';
+@import './sections/home2/businessTools';
+@import './sections/home2/statistics';
+@import './sections/home2/chooseUs';
+@import './sections/home2/comparePricing';
+@import './sections/home2/integrate2';
+/*-- home page 2 style start --*/
+
+/*-- home page 3 style start --*/
+@import './sections/home3/mainFeature';
+@import './sections/home3/usefulFeature';
+@import './sections/home3/counter';
+@import './sections/home3/virtually';
+@import './sections/home3/bestPricing';
+@import './sections/home3/meetingAnytime';
+/*-- home page 3 style end --*/
+
+/*-- home page 4 style start --*/
+@import './sections/home4/howWorks';
+@import './sections/home4/whyChoose';
+@import './sections/home4/rating';
+@import './sections/home4/testimonial';
+@import './sections/home4/faq';
+@import './sections/home4/building';
+/*-- home page 4 style end --*/
+
+/*-- home page 5 style start --*/
+@import './sections/home5/chose-us';
+@import './sections/powerfull-template/powerfull-template';
+@import './sections/happy-customers/happy-customers';
+/*-- home page 5 style end --*/
+
+/*-- home page 7 style start --*/
+@import './sections/home7/portfolioGallery';
+/*-- home page 7 style end --*/
+
+/*-- home page 8 style start --*/
+@import './sections/home8/home8-banner';
+@import './sections/home8/dsesign-system';
+@import './sections/home8/accounting';
+@import './sections/home8/we-offering';
+/*-- home page 8 style end --*/
+
+/*-- about-us page style start --*/
+@import './sections/aboutUs/customer';
+@import './sections/aboutUs/aboutFeature';
+@import './sections/aboutUs/team';
+@import './sections/aboutUs/building';
+/*-- about-us page style end --*/
+
+/*-- service page style start --*/
+@import './sections/service/service';
+@import './sections/service/skills';
+@import './sections/service/coreFeature';
+/*-- service page style end --*/
+
+/*-- Pricing Plan style start --*/
+@import './sections/pricing-plan/pricing-plan';
+@import './sections/pricing-plan/compare-plans';
+/*-- Pricing Plan style end --*/
+
+/*-- contact-us page style start --*/
+@import './sections/contact/contact';
+/*-- contact-us page style end --*/
+
+
+/*-- Letest Blog style start --*/
+@import './sections/letest-blog/letest-blog';
+/*-- Letest Blog style end --*/
+/*-- blog details style start --*/
+@import './sections/blog-details/blog-details';
+@import './sections/blog-details/comment';
+/*-- blog details style end --*/
+
+
+/*--------------------------------
+04. Components style
+--------------------------------*/
+@import './components/buttons';
+@import './components/badge';
+@import './components/breadcrumb';
+@import './components/form';
+@import './components/pagination';
+@import './components/case-studies';
+@import './components/developer-apis';
+@import './components/ultimate-features';
+@import './components/portfolio';
+@import './components/footer-testimonial';
+@import './components/manage-team';
+@import './components/index6-card-section';
+@import './components/section-title';
+@import './components/lets-talk';
+@import './components/benefits';
+@import './components/customers-quote';
+@import './components/blog-post';
+@import './components/disclaimer';
+@import './components/scrollTop';
+
+
+/*--------------------------------
+05. Utilities style
+--------------------------------*/
+@import './utilities/utilites';

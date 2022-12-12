@@ -1,0 +1,20 @@
+.disclaimer-section {
+    // position: fixed;
+    // bottom: 0px;
+    // left: 0px;
+    // width: 100%;
+    // z-index: 0;
+    padding: 53px 0 60px 0;
+    background-color: #ecf1f1;
+}
+.disclaimer-text {
+    font-family: fontfamily(dmSans);
+    h6 {
+        font-weight: 700;
+        margin-bottom: 11px;
+    }
+    p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}

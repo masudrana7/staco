@@ -1,0 +1,39 @@
+/*-- virtually-section start --*/
+.virtually-section {
+    padding: 65px 0 136px 0;
+}
+/*-- virtually-card style --*/
+.virtually-card {
+    .virtually-title {
+        margin-bottom: 44px;
+        p {
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            @include textStyle(18px, 700, 30px);
+            color: color(primary);
+            letter-spacing: 0.2em;
+        }
+    }
+    .virtually-content {
+        margin-bottom: 6px;
+        h2 {
+            margin-bottom: 24px;
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }
+    .list {
+        padding: 0;
+        list-style: none;
+        .list-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            svg {
+                font-size: 18px;
+                color: color(iconColor);
+            }
+        }
+    }
+}
+/*-- virtually-section end --*/

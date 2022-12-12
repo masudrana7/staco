@@ -1,0 +1,212 @@
+/*-- pricing-section start --*/
+.pricing-section {
+    padding: 132px 0 90px 0;
+    background-color: color(bgFooter);
+    position: relative;
+    z-index: 0;
+    &::before {
+        position: absolute;
+        z-index: -1;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffffff05;
+    }
+
+    .shape-img {
+        position: absolute;
+        z-index: -1;
+        &.img-1 {
+            bottom: 0;
+            right: 10%;
+        }
+        &.img-2 {
+            bottom: 0;
+            left: 10%;
+        }
+        &.img-3 {
+            top: 0;
+            left: 0;
+        }
+        &.img-4 {
+            top: 25%;
+            left: 8%;
+        }
+        &.img-5 {
+            bottom: 20%;
+            right: 5%;
+        }
+    }
+}
+
+/*-- pricing-section-title style --*/
+.pricing-section-title {
+    margin-bottom: 40px;
+    h3 {
+        margin-bottom: 19px;
+        text-transform: uppercase;
+        @include textStyle(18px, 700, 30px);
+        color: color(primary);
+        letter-spacing: 0.2em;
+    }
+    h2 {
+        text-transform: capitalize;
+        color: color(whiteColor);
+    }
+}
+
+/*-- pricing-selector style --*/
+.pricing-selector {
+    margin-bottom: 40px;
+    width: 100%;
+    height: calc(100% - 40px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    form {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        button {
+            @include textStyle(15px, 500, 20px);
+            color: color(whiteColor);
+            span {
+                color: color(heroimg1Bg);
+            }
+        }
+        input[type="checkbox"] {
+            appearance: none;
+            width: 50px;
+            height: 24px;
+            border-radius: 15px;
+            background-color: color(whiteColor);
+            position: relative;
+            cursor: pointer;
+            transition: 0.3s;
+            &::before {
+                position: absolute;
+                content: "";
+                top: 5px;
+                left: 5px;
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background-color: color(primary);
+                transition: 0.3s;
+            }
+            &:checked {
+                background-color: color(primary);
+                &::before {
+                    left: 30px;
+                    background-color: color(whiteColor);
+                }
+            }
+        }
+    }
+}
+
+.pricing-yearly {
+    display: none;
+}
+.pricing-card-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*-- pricing-card style --*/
+.pricing-card {
+    margin-bottom: 40px;
+    border-radius: 30px;
+    background-color: color(whiteColor);
+    padding: 40px;
+    transition: 0.3s;
+
+    &:hover {
+        .pricing-btn {
+            background-color: color(primary);
+            color: color(whiteColor);
+            svg {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    h2 {
+        font-size: 30px;
+        color: color(title);
+    }
+
+    h3 {
+        font-size: 30px;
+        span {
+            font-family: fontfamily(dmSans) !important;
+            @include textStyle(15px, 500, 30px);
+            color: color(textColor);
+        }
+    }
+
+    &-header {
+        margin-bottom: 20px;
+        p {
+            margin-bottom: 28px;
+        }
+    }
+
+    &-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+        margin-bottom: 12px;
+    }
+
+    &-list {
+        margin-bottom: 27px;
+        li {
+            padding-left: 16px;
+            position: relative;
+
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #00cec966;
+            }
+        }
+    }
+
+    .pricing-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #0095ff4d;
+        color: color(primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        svg {
+            font-size: 20px;
+            transition: 0.3s;
+        }
+        &:hover {
+            background-color: color(primary);
+            color: color(whiteColor);
+            svg {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+/*-- pricing-section end --*/

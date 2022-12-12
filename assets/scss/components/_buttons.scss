@@ -1,0 +1,641 @@
+/*-- butoon style start --*/
+//btn inner style mixin
+@mixin btnInnerStyle() {
+    font-weight: 700;
+    .btn-inner {
+        display: inline-block;
+    }
+    span {
+        position: relative;
+        z-index: 11;
+        transition: opacity 0.6s, transform 0.8s;
+        transition-timing-function: cubic-bezier(0.15, 0.85, 0.31, 1);
+        color: #fff;
+        &:nth-child(2) {
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 80%);
+            opacity: 0;
+        }
+    }
+}
+
+//btn inner hover style mixin
+@mixin hoverBtnInnerStyle() {
+    .btn-inner {
+        transform: translateY(-150%);
+    }
+    span {
+        &:nth-child(2) {
+            transform: translate(-50%, 100%);
+            opacity: 1;
+        }
+        .btn-normal-text {
+            opacity: 0;
+        }
+    }
+}
+
+.theme-btn {
+    border-radius: 50px;
+    border: 1px solid transparent;
+    padding: 12px 39px;
+    background-color: #0095ff;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 26px;
+    color: #ffffff !important;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    &:focus {
+        border: 1px solid #0095ff;
+        background-color: transparent;
+        color: #0095ff !important;
+    }
+
+    &.primary-bg {
+        border: 1px solid transparent;
+        background-color: #0095ff;
+        color: #ffffff !important;
+        transition: 0.3s;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        @include btnInnerStyle();
+
+        &::before {
+            position: absolute;
+            z-index: -1;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            background: rgba(0, 0, 0, 0.1);
+            transform: translateX(-100%);
+            transition: 0.3s;
+        }
+        &:hover,
+        &:focus {
+            background: color(primary);
+            &::before {
+                transform: translateX(0%);
+            }
+            @include hoverBtnInnerStyle();
+        }
+    }
+
+    &.talk-btn {
+        background: rgba(255, 255, 255, 0.15);
+        transition: 0.3s;
+        overflow: hidden;
+        @include btnInnerStyle();
+
+        &:hover,
+        &:focus {
+            border: 1px solid transparent;
+            background: color(whiteColor);
+            color: color(title);
+            @include hoverBtnInnerStyle();
+            span {
+                color: color(title);
+            }
+        }
+    }
+}
+
+.start-free-btn {
+    max-width: 100%;
+    width: 212px;
+    height: 60px;
+    border: 1px solid #0095ff4d;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: color(primary);
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    @include btnInnerStyle();
+    span {
+        color: color(primary);
+    }
+    &.text-wh {
+        span {
+            color: color(whiteColor);
+        }
+    }
+    &::before {
+        position: absolute;
+        z-index: -1;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+        background-color: color(primary);
+        transform: translateX(-100%);
+        transition: 0.3s;
+    }
+    &:hover {
+        border: 1px solid color(primary);
+        color: color(whiteColor);
+        &::before {
+            transform: translateX(0%);
+        }
+        @include hoverBtnInnerStyle();
+        span {
+            color: color(whiteColor);
+        }
+    }
+}
+
+.contact-us-btn {
+    max-width: 100%;
+    width: 212px;
+    height: 60px;
+    border: 1px solid #00cec9;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00cec9;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    @include btnInnerStyle();
+    span {
+        color: #00cec9;
+    }
+    &::before {
+        position: absolute;
+        z-index: -1;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+        background-color: #00cec9;
+        transform: translateX(-100%);
+        transition: 0.3s;
+    }
+    &:hover {
+        border: 1px solid #00cec9;
+        color: color(whiteColor);
+        &::before {
+            transform: translateX(0%);
+        }
+        @include hoverBtnInnerStyle();
+        span {
+            color: color(whiteColor);
+        }
+    }
+}
+
+.start-meeting-btn {
+    border: 2px solid #00cec9;
+    border-radius: 50px;
+    padding: 10px 24px;
+    color: #00cec9 !important;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include btnInnerStyle();
+    span {
+        color: #00cec9;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: #00cec9;
+        color: #fff !important;
+        @include hoverBtnInnerStyle();
+        span {
+            color: #fff;
+        }
+    }
+}
+
+.bg-white-btn {
+    padding: 12px 39px;
+    background-color: color(whiteColor);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: color(title) !important;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    @include btnInnerStyle();
+    span {
+        color: color(title);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: color(primary);
+        color: color(whiteColor) !important;
+        @include hoverBtnInnerStyle();
+        span {
+            color: color(whiteColor);
+        }
+    }
+}
+
+.bg-skyblue-btn {
+    width: 150px;
+    height: 50px;
+    background: rgba(0, 149, 255, 0.2);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: color(primary) !important;
+    position: relative;
+    overflow: hidden;
+    @include btnInnerStyle();
+    span {
+        color: color(primary);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: rgb(0, 149, 255);
+        color: color(whiteColor) !important;
+        @include hoverBtnInnerStyle();
+        span {
+            color: color(whiteColor);
+        }
+    }
+}
+.bg-green-btn {
+    width: 150px;
+    height: 50px;
+    background: color(v8SeconderyColor);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: #fff !important;
+    position: relative;
+    overflow: hidden;
+    @include btnInnerStyle();
+
+    &:hover,
+    &:focus {
+        background-color: color(v8Title2);
+        color: color(v8SeconderyColor) !important;
+        @include hoverBtnInnerStyle();
+        span {
+            color: color(v8SeconderyColor);
+        }
+    }
+}
+.header-outline-btn {
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: color(heroimg1Bg) !important;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(0, 206, 201, 0.5);
+    @include btnInnerStyle();
+    span {
+        color: color(heroimg1Bg);
+    }
+
+    &:hover,
+    &:focus {
+        background: rgba(0, 206, 201, 0.5);
+        color: color(title) !important;
+        @include hoverBtnInnerStyle();
+        span {
+            color: color(title);
+        }
+    }
+}
+
+.bg-blue-btn {
+    padding: 18px 46px;
+    background-color: color(primary);
+    border-radius: 100px;
+    color: color(whiteColor);
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    z-index: 0;
+    @include btnInnerStyle();
+
+    &:hover,
+    &:focus {
+        color: color(whiteColor);
+        background: #0086e5;
+        @include hoverBtnInnerStyle();
+    }
+}
+
+.banner-btn-v8 {
+    width: fit-content;
+    padding: 16px 46px;
+    border: 1px solid transparent;
+    background-color: color(v8Title);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: color(whiteColor);
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    @include btnInnerStyle();
+
+    &:hover,
+    &:focus {
+        background-color: color(v8Title2);
+        color: color(v8SeconderyColor);
+        @include hoverBtnInnerStyle();
+        span {
+            color: color(v8SeconderyColor);
+        }
+    }
+}
+
+.bg-pink-btn {
+    width: 150px;
+    height: 50px;
+    background: rgba(247, 87, 140, 0.2);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: color(badgeColor) !important;
+    position: relative;
+    overflow: hidden;
+    @include btnInnerStyle();
+    span {
+        color: color(badgeColor);
+    }
+
+    &:hover,
+    &:focus {
+        background: rgb(247, 87, 140);
+        color: color(whiteColor) !important;
+        @include hoverBtnInnerStyle();
+        span {
+            color: color(whiteColor);
+        }
+    }
+}
+
+.bg-olive-btn {
+    width: 150px;
+    height: 50px;
+    background: color(primary6);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: color(title) !important;
+    position: relative;
+    overflow: hidden;
+    @include btnInnerStyle();
+    span {
+        color: color(title);
+    }
+
+    &:hover,
+    &:focus {
+        background: color(primary6Deep);
+        color: color(whiteColor) !important;
+        @include hoverBtnInnerStyle();
+        span {
+            color: color(whiteColor);
+        }
+    }
+}
+.lets-talk-btn {
+    width: 170px;
+    height: 60px;
+    background: color(primary6);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: color(title) !important;
+    position: relative;
+    overflow: hidden;
+    img {
+        filter: brightness(0);
+        margin-left: 10px;
+        transition: 0.7s;
+    }
+
+    &:hover,
+    &:focus {
+        background: color(primary6Deep);
+        color: color(whiteColor) !important;
+        img {
+            filter: none;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.btn-olive-deep {
+    width: 220px;
+    height: 60px;
+    background: color(primary6Deep);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: color(whiteColor) !important;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    @include btnInnerStyle();
+
+    &:hover,
+    &:focus {
+        background: color(primary6);
+        color: color(title) !important;
+        @include hoverBtnInnerStyle();
+        span {
+            color: color(title);
+        }
+    }
+}
+
+.case-studies-btn {
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.contact-btn {
+    border-radius: 50px;
+    background: color(transparent);
+    color: color(title);
+    width: 220px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    transition: 0.5s;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    @include btnInnerStyle();
+    span {
+        color: color(title);
+    }
+    &:hover {
+        border: 2px solid transparent;
+        background: color(title);
+        color: color(whiteColor);
+        @include hoverBtnInnerStyle();
+        span {
+            color: color(whiteColor);
+        }
+    }
+}
+
+.load-more-btn {
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 150px;
+    height: 50px;
+    background: rgba(177, 177, 177, 0.2);
+    border-radius: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: color(title) !important;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    transition: 0.5s;
+    @include btnInnerStyle();
+    span {
+        color: color(title);
+    }
+
+    &:hover,
+    &:focus {
+        background: color(title);
+        color: color(whiteColor) !important;
+        @include hoverBtnInnerStyle();
+        span {
+            color: color(whiteColor);
+        }
+    }
+}
+
+.explore-btn {
+    border-radius: 50px;
+    padding: 17px 36px;
+    background-color: #2d2e50;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 26px;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s;
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+
+    &:hover,
+    &:focus {
+        background: rgb(247, 87, 140);
+        color: color(whiteColor) !important;
+    }
+}
+
+.text-link {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: color(primary);
+    transition: 0.3s;
+    svg {
+        font-size: 20px;
+        transition: 0.3s;
+    }
+    &:hover,
+    &:focus {
+        color: color(primary);
+        svg {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.lets-talk-bttn {
+    font-family: fontfamily(dmSans);
+    color: color(whiteColor);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 13px;
+    transition: 0.3s;
+    &:hover {
+        color: color(primary6Deep);
+        .icon {
+            transform: rotate(-45deg);
+            background: color(primary6Deep);
+            color: color(whiteColor);
+        }
+    }
+    .icon {
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        transition: 0.3s;
+    }
+}
+/*-- butoon style end --*/

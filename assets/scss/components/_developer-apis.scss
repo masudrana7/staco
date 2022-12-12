@@ -1,0 +1,115 @@
+.developer-apis-Section {
+    background: color(bgHero);
+    margin-bottom: 47px;
+
+    .developer-apis-left {
+        padding-right: 50px;
+        padding-top: 112px;
+        margin-bottom: 112px;
+        .developer-apis-text {
+            p {
+                font-family: fontfamily(dmSans);
+                @include textStyle(15px, 500, 30px);
+                color: color(whiteColor);
+                margin-top: 35px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    
+    .developer-apis-right{
+        background: rgba(255, 255, 255, 0.04);
+        height: 100%;
+        width: 100%;
+        padding: 120px 30px;
+        .developer-apis-tab-buttons{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 33px;
+            border-bottom: none;
+            button {
+                padding: 8px 19px;
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                border-radius: 26px;
+                font-family: fontfamily(dmSans);
+                @include textStyle(15px, 500, 24px);
+                color: color(whiteColor);
+                transition: 0.3s;
+
+                &.active,
+                &:hover{
+                    border: 1px solid rgba(255, 255, 255, 0.08);
+                    background: rgba(255, 255, 255, 0.08);
+                }
+            }
+        }
+    }
+}
+
+.section-title2 {
+    p {
+        font-family: fontfamily(dmSans);
+        @include textStyle(18px, 700, 30px);
+        color: color(badgeColor);
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-family: fontfamily(montserratAlternates);
+        @include textStyle(40px, 700, 60px);
+        color: color(whiteColor);
+        max-width: 363px;
+    }
+}
+
+.developer-apis-notepad {
+    .custom-textarea {
+        position: relative;
+        width: 100%;
+        max-width: 90%;
+        margin: auto;
+        overflow: hidden;
+        .textarea {
+            display: block;
+            position: relative;
+            z-index: 1;
+            width: calc(100% - 58px);
+            height: 288px;
+            min-height: 288px;
+            max-height: 288px;
+            margin-left: 24px;
+            outline: none;
+            border: none;
+            white-space: pre;
+            overflow-y: auto;
+            word-wrap: normal;
+            word-break: break-all;
+            background: transparent;
+            resize: none;
+            overflow-x: none;
+            font-family: fontfamily(firaCode);
+            @include textStyle(13px, 500, 24px);
+            color: color(whiteColor);
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        .linenumbers {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 16px;
+            background: transparent;
+
+            .number {
+                font-family: fontfamily(firaCode);
+                @include textStyle(13px, 500, 24px);
+                color: rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+}

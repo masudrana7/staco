@@ -1,0 +1,116 @@
+/*-- hero-section-4 style start --*/
+.hero-section-4 {
+    background-color: #f8f0e6;
+    padding: 200px 0 154px 0;
+    position: relative;
+    overflow: hidden;
+    .marketing-badge {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .hero-content-list .list-item p {
+        color: color(title);
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        width: 36.5%;
+        height: 100%;
+        background-color: #242549;
+        background-image: url("../images/hero/map-bg.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 100%;
+    }
+}
+
+.hero-section-4-content {
+    .hero-content-text {
+        position: relative;
+        .title {
+            line-height: 1.17;
+            margin-bottom: 27px;
+        }
+        h2,
+        p {
+            color: color(title);
+        }
+        &::before {
+            position: absolute;
+            content: url("../images/icons/shape-left.svg");
+            top: -15px;
+            left: -30px;
+            width: 42px;
+            height: 40px;
+            line-height: 0;
+            animation: badgeAnimate 2s infinite ease-in-out;
+        }
+    }
+    .hero-content-list {
+        svg {
+            color: color(title);
+        }
+    }
+}
+
+.hero-section-4-img {
+    position: relative;
+
+    .overlay-item {
+        position: absolute;
+
+        &.item-1 {
+            top: -36px;
+            left: 140px;
+        }
+        &.item-2 {
+            top: 110px;
+            left: -48px;
+        }
+
+        &.item-3 {
+            bottom: -9px;
+            right: -46px;
+        }
+
+        &.chart {
+            top: 50%;
+            right: -50px;
+            transform: translateY(-50%);
+            background-color: color(whiteColor);
+            border-radius: 0px 15px 0px 0px;
+            padding: 11px 16px;
+        }
+
+        &.status {
+            bottom: 45px;
+            left: -25%;
+            .pie_progress {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 130px;
+                height: 130px;
+                margin: auto 0;
+                background-color: transparent;
+            }
+
+            .pie_progress__label {
+                margin-top: 0px;
+            }
+
+            .pie_progress__label h4 {
+                color: color(blackColor);
+            }
+
+            .pie_progress__label p {
+                margin: 0;
+                font-size: 13px;
+            }
+        }
+    }
+}
+/*-- hero-section-4 style end --*/

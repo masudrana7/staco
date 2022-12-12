@@ -1,0 +1,102 @@
+.blog-post-section {
+    padding-bottom: 110px;
+}
+.blog-post-card {
+    overflow: hidden;
+    padding: 30px;
+    border-radius: 30px;
+    min-height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    &.blog-post-card1 {
+        background: color(whiteColor);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+        justify-content: flex-start;
+        .card-title {
+            h6 {
+                color: color(primary6Deep);
+            }
+        }
+
+        .card-footer {
+            .user {
+                span {
+                    color: color(title);
+                }
+            }
+            h5 {
+                color: color(textColor);
+                opacity: 0.8;
+            }
+        }
+    }
+    &.blog-post-card2 {
+        background: url(../images/index6/blog-post-card-bg.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: color(whiteColor);
+        justify-content: flex-end;
+    }
+    &.blog-post-card3 {
+        background: color(primary6);
+        justify-content: space-between;
+        .card-title {
+            color: color(v6themeColor);
+        }
+        .card-footer {
+            color: color(title);
+        }
+    }
+
+    .card-title {
+        h6 {
+            font-family: fontfamily(dmSans);
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        h4 {
+            margin-bottom: 25px;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        h3 {
+            margin-bottom: 25px;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    p {
+        padding-bottom: 15px;
+    }
+    .card-footer {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .user {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            .user-img {
+                height: 36px;
+                width: 36px;
+                border-radius: 50%;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

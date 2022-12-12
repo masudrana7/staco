@@ -1,0 +1,22 @@
+/*-- customer-section start --*/
+.customer-section {
+    padding: 140px 0;
+    .users-list {
+        margin-bottom: 13px;
+    }
+}
+
+.customer-content {
+    &-text {
+        h2 {
+            margin-bottom: 37px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .text-link {
+            margin-top: 40px;
+        }
+    }
+}
+/*-- customer-section end --*/

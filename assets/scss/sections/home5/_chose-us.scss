@@ -1,0 +1,27 @@
+.why-chose-us-section {
+    padding-top: 132px;
+    padding-bottom: 126px;
+
+    .why-chose-us-content {
+        margin-top: 40px;
+        .why-chose-us-card {
+            padding: 44px 20px;
+            width: 100%;
+            text-align: center;
+            border-radius: 30px;
+            overflow: hidden;
+            &.active {
+                background: color(cardBg);
+            }
+            h5 {
+                margin-bottom: 24px;
+            }
+            p {
+                max-width: 330px;
+                width: 100%;
+                margin: auto;
+                margin-bottom: 47px;
+            }
+        }
+    }
+}

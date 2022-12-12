@@ -1,0 +1,42 @@
+.v8banner-section {
+    background: #0d333f;
+    padding-top: 90px;
+    position: relative;
+}
+
+.v8banner-text {
+    max-width: 607px;
+    padding-right: 49px;
+    min-height: 760px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    .title {
+        line-height: 1.25;
+        color: color(whiteColor);
+        margin-bottom: 18px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 36px;
+        color: color(whiteColor);
+        margin-bottom: 48px;
+    }
+}
+
+.v8banner-video {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: 90px;
+    video {
+        width: 100%;
+        min-height: 760px;
+        object-fit: cover;
+    }
+}

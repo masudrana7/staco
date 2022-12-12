@@ -1,0 +1,59 @@
+.skills-section {
+    padding: 112px 0;
+    background-color: color(blueGray);
+}
+
+.skills-content {
+    &-text {
+        margin-bottom: 45px;
+    }
+    h5 {
+        margin-bottom: 16px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: color(primary);
+    }
+    h2 {
+        color: color(title);
+    }
+    p {
+        margin-top: 22px;
+        color: color(textColor);
+        margin-bottom: 0;
+    }
+}
+
+.skills-status {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+    .skills-item {
+        text-align: center;
+        p {
+            margin-top: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            color: color(title);
+        }
+    }
+
+    .pie_progress {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        background-color: transparent;
+    }
+
+    .pie_progress__label {
+        margin-top: 0px;
+    }
+
+    .pie_progress__label h4 {
+        margin-bottom: 0;
+        font-weight: 600;
+        color: color(title);
+        letter-spacing: 0.01em;
+    }
+}

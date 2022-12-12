@@ -1,0 +1,56 @@
+.section-title {
+    p {
+        margin-bottom: 5px;
+    }
+    &.v8 {
+        p {
+            color: color(v8Title);
+            font-family: fontfamily(dmSans);
+            @include textStyle(18px, 700, 30px);
+            letter-spacing: 0.2em;
+            margin-bottom: 10px;
+        }
+        &.title2 {
+            p {
+                color: color(v8Title2);
+            }
+            h2 {
+                color: color(whiteColor);
+            }
+        }
+    }
+}
+/*-- section-title style --*/
+.section-title {
+    margin-bottom: 38px;
+    .sub-title {
+        text-transform: uppercase;
+        @include textStyle(18px, 700, 30px);
+        color: color(primary);
+        letter-spacing: 0.2em;
+        margin-bottom: 12px;
+        display: block;
+    }
+    .green-color {
+        color: color(primary6Deep);
+    }
+    .green-lite {
+        color: color(v8Title2);
+    }
+    .title {
+        line-height: 1.55;
+    }
+    h6 {
+        margin-top: 12px;
+    }
+    h5 {
+        font-family: fontfamily(dmSans);
+        @include textStyle(18px, 500, 26px);
+        margin-top: 12px;
+    }
+    .love-icon {
+        svg {
+            color: #f7578c;
+        }
+    }
+}

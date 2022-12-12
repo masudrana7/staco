@@ -1,0 +1,84 @@
+/*-- font family included --*/
+/*-- DM Sans font family --*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+$dmSansFont: "DM Sans", sans-serif;
+
+/*-- Montserrat Alternates font family --*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap");
+$montserratAlternatesFont: "Montserrat Alternates", sans-serif;
+
+/*-- Montserrat Alternates font family --*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$jostFont: "Jost", sans-serif;
+
+/*-- Fira Code font family --*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+$firaCode: "Fira Code", monospace;
+
+//font family functions
+@function fontfamily($key) {
+    //font family map
+    $fontFamily: (
+    dmSans: $dmSansFont,
+    montserratAlternates: $montserratAlternatesFont,
+    jost: $jostFont,
+    firaCode: $firaCode,
+    );
+    
+    @return map-get($fontFamily, $key);
+}
+
+//color function
+@function color($key) {
+    //colors map
+    $colors: (
+    whiteColor: #ffffff,
+    whiteOp70: #ffffffb2,
+    blackColor: #000000,
+    primary: #0095ff,
+    title: #111111,
+    textColor: #444444,
+    bgHero: #242549,
+    bgFooter: #191c1f,
+    borderColor: #d9d9d91a,
+    borderColor2: #f5eef4,
+    badgeColor: #f7578c,
+    badgeColor2: #fec458,
+    iconColor: #999999,
+    iconColor2: #0ec36b,
+    bgDropdown: #ebeff9,
+    bodyBG2: #ECEFF1,
+    heroimg1Bg: #00CEC9,
+    home5HeroBg: #F0F5FF,
+    hero6Bg: #1F2334,
+    cardBg: #F9F1FF,
+    liteblue: #B3E1EC,
+    offwhite: #E2D08E,
+    litepink:  #F7C8EC,
+    liteviolet: #A6A6B9,
+    blueGray: #EEEFFB,
+    btnColor: #FFDA54,
+    btnTextColor: #050038,
+    featuresCardBG: #267DFF,
+    featuresCardBG2: #0EC36B,
+    featuresCardBG3: #7956FD,
+    featuresCardBG4: #EEF4FF,
+    v6BG: #ECF1F1,
+    primary6: #B2EDA1,
+    primary6Deep: #44C486,
+    v6themeColor: #004D42,
+    aeroBlue: #D1FDE9,
+    v8Title: #0DAC81,
+    v8Title2: #AAEF69,
+    v8SeconderyColor: #1A7870,
+    );
+    
+    @return map-get($colors, $key);
+}
+
+//text style mixin
+@mixin textStyle($fontSize, $fontWeight, $lineHeight) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+}

@@ -1,0 +1,53 @@
+.rating-section {
+    padding: 120px 0 140px 0;
+}
+
+.rating-card {
+    border: 1px dashed rgba(0, 0, 0, 0.15);
+    border-radius: 60px;
+    padding: 35px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.rating-item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    .rating-icon {
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .rating-info {
+        h2 {
+            line-height: 24px;
+            font-size: 24px;
+        }
+    }
+
+    .rating-meta {
+        padding: 0;
+        list-style: none;
+        margin-top: 5px;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        li {
+            position: relative;
+            &:not(:first-child) {
+                &::before {
+                    position: absolute;
+                    content: "|";
+                    top: 0;
+                    left: -10px;
+                }
+            }
+        }
+    }
+}

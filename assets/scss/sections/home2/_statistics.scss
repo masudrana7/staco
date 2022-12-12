@@ -1,0 +1,33 @@
+/*-- index2-statistics-section start --*/
+.index2-statistics-section {
+    background: transparent;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    min-height: 236px;
+    height: auto;
+    margin-bottom: 135px;
+    & .index2-statistics-content {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        min-height: 236px;
+        width: 100%;
+        padding: 77.5px 0;
+    }
+}
+.statistics-text {
+    & h2 {
+        color: color(primary);
+    }
+    & p {
+        @include textStyle(18px, 500, 40px);
+        color: color(title);
+    }
+    &.v6 {
+        h2,
+        p {
+            color: color(v6themeColor);
+        }
+    }
+}
+/*-- index2-statistics-section End --*/
