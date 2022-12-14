@@ -25,14 +25,15 @@
                 width: 50px;
             }
             .comment-people-text {
-                h5 {
-                    font-family: fontfamily(dmSuns);
-                    @include textStyle(15px, 700, 24px);
+                span {
+                    display: block;
                 }
-                h6 {
-                    font-family: fontfamily(dmSuns);
-                    @include textStyle(14px, 700, 24px);
-                    color: color(textColor);
+                .author-name {
+                    font-weight: 700;
+                    color: color(title);
+                }
+                .blog-date {
+                    font-size: 14px;
                 }
             }
         }
@@ -49,6 +50,7 @@
                 gap: 9px;
                 color: color(title);
                 text-transform: uppercase;
+                font-weight: 500;
             }
         }
     }

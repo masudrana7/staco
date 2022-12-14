@@ -8,7 +8,7 @@
         border-radius: 50px 50px 0px 0px;
         .footer-widget {
             margin-top: 0;
-            .widget-title h2 {
+            .widget-title h6 {
                 color: color(title);
             }
             .widget-list {
@@ -54,7 +54,7 @@
         .footer-widget {
             margin-top: 0;
             .widget-title {
-                h2 {
+                h6 {
                     color: color(title);
                 }
             }
@@ -97,6 +97,7 @@
         h4 {
             font-size: 18px;
             color: #ffffff;
+            font-weight: 600;
         }
         h5 {
             margin-top: 20px;
@@ -131,6 +132,9 @@
 /*-- footer-top start --*/
 .footer-top {
     padding: 120px 0 70px 0;
+    .footer-follow p {
+        margin-bottom: 0;
+    }
 }
 
 /*-- footer-info style --*/
@@ -196,16 +200,16 @@
         }
     }
 }
-
 /*-- footer-widget style --*/
 .footer-widget {
     margin-top: 23px;
     .widget-title {
         margin-bottom: 25px;
-        h2 {
+        h6 {
             text-transform: uppercase;
-            @include textStyle(15px, 600, 26px);
+            font-weight: 600;
             color: color(whiteColor);
+            margin-bottom: 0;
         }
     }
 

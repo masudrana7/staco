@@ -58,9 +58,9 @@
             height: 40px;
         }
     }
-    h2 {
+    h5 {
         margin-bottom: 10px;
-        @include textStyle(18px, 600, 26px);
+        font-weight: 600;
     }
 }
 

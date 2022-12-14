@@ -79,9 +79,10 @@
         align-items: center;
         justify-content: space-between;
         transition: 0.7s;
-        h6 {
-            font-family: fontfamily(dmSans);
+        span {
             transition: 0.5s;
+            color: color(textColor);
+            font-weight: 700;
         }
         .link-btn {
             height: 40px;
@@ -104,7 +105,7 @@
     }
     &:hover {
         a {
-            h6 {
+            span {
                 color: color(primary6Deep);
             }
             .link-btn {

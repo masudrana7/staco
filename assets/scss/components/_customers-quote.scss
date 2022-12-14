@@ -1,20 +1,20 @@
-.v6-top-section{
+.v6-top-section {
     //background: color(whiteColor);
     background: transparent;
     position: relative;
     z-index: 2;
 }
-.h6-bottom-section{
+.h6-bottom-section {
     background-color: #ecf1f1;
 }
-.v6-bottom-section{
+.v6-bottom-section {
     background: color(v6BG);
     position: relative;
     z-index: 1;
 }
 
 /*-- customers-quote-section --*/
-.customers-quote-section{
+.customers-quote-section {
     padding-top: 120px;
     padding-bottom: 132px;
 }
@@ -26,28 +26,28 @@
     height: auto;
     position: relative;
     overflow: hidden;
-    .customers-quote-bg{
+    .customers-quote-bg {
         position: absolute;
         left: 9%;
         bottom: 117px;
-        img{
+        img {
             height: 100%;
             width: 100%;
         }
     }
-    .quote-icon{
+    .quote-icon {
         position: absolute;
         top: 18%;
         right: 46%;
     }
-    &::before{
+    &::before {
         content: url(../images/index6/card-quote-img.png);
         position: absolute;
         left: 0px;
         top: 48px;
         z-index: 0;
     }
-    .customers-quote-content{
+    .customers-quote-content {
         padding-top: 100px;
         padding-bottom: 49px;
         padding-right: 50px;
@@ -56,7 +56,7 @@
     }
 }
 /*-- customers-quote-img --*/
-.customers-quote-img{
+.customers-quote-img {
     position: relative;
     min-height: 298px;
     max-width: 320px;
@@ -65,14 +65,14 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    .quote-customers-img{
+    .quote-customers-img {
         position: relative;
         z-index: 2;
     }
 }
 
 /*-- customers-quote-text --*/
-.customers-quote-text{
+.customers-quote-text {
     max-width: 520px;
     width: 100%;
     height: 100%;
@@ -80,10 +80,10 @@
     align-items: flex-start;
     justify-content: flex-end;
     flex-direction: column;
-    .quote-icon{
+    .quote-icon {
         margin-bottom: 42px;
     }
-    p{
+    p {
         font-family: fontfamily(dmSans);
         @include textStyle(18px, 500, 36px);
         color: color(title);
@@ -94,14 +94,15 @@
         -webkit-box-orient: vertical;
         white-space: normal;
     }
-    .quote-customer-name{
+    .quote-customer-name {
         color: color(title);
         font-family: fontfamily(dmSans);
-        h5 {
+        .name {
             @include textStyle(18px, 700, 30px);
+            display: block;
         }
-        h6 {
-            @include textStyle(15px, 500, 30px);
+        .duration {
+            display: block;
         }
     }
 }
@@ -111,11 +112,11 @@
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding: 20px 38px;
     position: relative;
-    &::before{
+    &::before {
         position: absolute;
         top: -2px;
         left: 0px;
-        content: '';
+        content: "";
         height: 2px;
         width: 30%;
         background: color(primary6Deep);
@@ -123,14 +124,14 @@
         -webkit-animation: lineProgress 12s linear infinite;
     }
     .quote-slider-nav {
-        img{
+        img {
             margin: auto;
         }
     }
-    .slick-list{
+    .slick-list {
         padding: 0 !important;
     }
-    
+
     .slick-track {
         width: 100% !important;
         transform: translate3d(0px, 0px, 0px) !important;
@@ -139,10 +140,10 @@
         justify-content: center;
         gap: 20px;
     }
-    .slide-item{
+    .slide-item {
         cursor: pointer;
         opacity: 0.6;
-        &.slick-current{
+        &.slick-current {
             opacity: 1;
         }
     }

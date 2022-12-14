@@ -78,7 +78,7 @@
     .letest-blog-catd-title {
         font-size: 18px;
         line-height: 30px;
-        margin-bottom: 8px;
+        margin-bottom: 20px;
     }
 }
 .letest-blog-search-section {
@@ -152,11 +152,9 @@
                 }
             }
             .recent-post-text {
-                h6 {
-                    font-family: fontfamily(dmSans);
+                .blog-date {
                     font-size: 14px;
                     line-height: 20px;
-                    color: color(textColor);
                     opacity: 0.8;
                     margin-bottom: 8px;
                 }
@@ -166,6 +164,13 @@
                     -webkit-box-orient: vertical;
                     overflow: hidden;
                     text-overflow: ellipsis;
+                    font-weight: 700;
+                    a {
+                        transition: 0.4s;
+                        &:hover {
+                            color: color(primary);
+                        }
+                    }
                 }
             }
         }
@@ -182,23 +187,24 @@
         flex-wrap: wrap;
         gap: 10px;
         & li {
-            padding: 11px 19px;
-            border: 1px solid rgba(0, 0, 0, 0.1);
             border-radius: 25px;
             transition: 0.3s;
+            display: inline-block;
             & a {
-                font-family: fontfamily(dmSans);
                 font-size: 14px;
-                line-height: 26px;
                 font-style: italic;
-                color: color(textColor);
                 transition: 0.3s;
-            }
-            &:hover {
-                a {
+                height: 45px;
+                line-height: 45px;
+                background: rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 25px;
+                display: block;
+                padding: 0 20px;
+                &:hover {
                     color: color(primary);
+                    border: 1px solid color(primary);
                 }
-                border: 1px solid color(primary);
             }
         }
     }

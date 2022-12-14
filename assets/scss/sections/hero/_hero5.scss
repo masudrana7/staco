@@ -29,7 +29,13 @@
             max-width: 210px;
             width: 100%;
             margin: auto;
-            margin-bottom: 28px;
+            margin-bottom: 20px;
+            color: color(title);
+            img {
+                margin-right: 10px;
+                position: relative;
+                top: -2px;
+            }
         }
 
         .v5banner-text {

@@ -2241,6 +2241,11 @@
             font-size: 24px;
         }
     }
+    .hero-section-index5 .index5-hero-content .v5banner-text span,
+    .hero-section-index5 .index5-hero-content .v5banner-text h2 {
+        display: block;
+        min-height: 40px;
+    }
 
     /*-- home page 3 style end --*/
 
@@ -2533,6 +2538,12 @@
 }
 
 @include breakpointMaxWidth(1199px) {
+    h1 {
+        font-size: 54px;
+    }
+    .section-title {
+        margin-bottom: 30px;
+    }
     .hero-content2-text {
         & h2 {
             font-size: 40px;
@@ -2581,10 +2592,6 @@
 
     .business-tools-content-scrolspy {
         padding-top: 100px;
-    }
-
-    .section-title {
-        margin-bottom: 30px;
     }
 
     .blog-details-inner {
@@ -2791,7 +2798,7 @@
         margin-bottom: 72px;
     }
 
-    .v8banner-text .title{
+    .v8banner-text .title {
         font-size: 44px;
     }
 
@@ -2884,7 +2891,7 @@
     .mobile-navbar-menu .sub-menu li {
         &:last-child {
             a {
-                padding-bottom: 20px;
+                padding-bottom: 18px;
             }
         }
     }
@@ -3599,14 +3606,32 @@
     .md-mb-40 {
         margin-bottom: 40px !important;
     }
+    .md-mb-50 {
+        margin-bottom: 50px !important;
+    }
+    .md-pt-40 {
+        padding-top: 40px !important;
+    }
     .md-pt-60 {
         padding-top: 60px !important;
+    }
+    .md-pt-70 {
+        padding-top: 70px !important;
+    }
+    .md-pb-0 {
+        padding-bottom: 0px !important;
     }
     .md-pb-40 {
         padding-bottom: 40px;
     }
     .md-pb-50 {
         padding-bottom: 50px !important;
+    }
+    .md-pb-60 {
+        padding-bottom: 60px !important;
+    }
+    .md-pb-80 {
+        padding-bottom: 80px !important;
     }
     .breadcrumb-sec .breadcrumb-title {
         font-size: 40px;
@@ -3620,6 +3645,9 @@
     }
     .best-pricing-card {
         padding: 30px;
+    }
+    .usability-section {
+        background-image: none;
     }
     .breadcrumb-section.blog-details-breadcrumb-section {
         height: 360px;
@@ -3645,6 +3673,9 @@
     }
     .powerfull-template-text {
         padding-top: 30px;
+    }
+    .building-section::after {
+        display: none;
     }
     .powerfull-template-img.powerfull-template-img-right {
         padding-left: 0;
@@ -3683,6 +3714,9 @@
     }
     .load-more-btn {
         margin-top: 20px;
+    }
+    .powerfull-template-section {
+        margin-bottom: 70px;
     }
     .hero-section-index5 .index5-hero-img {
         min-height: 270px;
@@ -3805,8 +3839,7 @@
         }
         .business-tools-content-scrolspy {
             .business-tools-content {
-                margin-bottom: 25px;
-                margin-bottom: 25px;
+                margin-bottom: 20px;
                 min-height: auto;
             }
         }
@@ -4600,18 +4633,6 @@
     .new-hoogle p {
         font-size: 16px;
     }
-
-    .hero-section-index5 {
-        .index5-hero-content {
-            .v5banner-text {
-                h2 {
-                    font-size: 23px;
-                    line-height: 28px;
-                    gap: 8px;
-                }
-            }
-        }
-    }
     .footer-testimonial-section .footer-testimonial-left ul {
         display: block;
     }
@@ -4671,18 +4692,6 @@
     .customers-quote-card .customers-quote-bg {
         width: 88.5%;
         left: 6%;
-    }
-
-    .hero-section-index5 {
-        .index5-hero-content {
-            .v5banner-text {
-                h2 {
-                    font-size: 24px;
-                    line-height: 30px;
-                    gap: 6px;
-                }
-            }
-        }
     }
 
     /*-- index 8 Start --*/

@@ -487,7 +487,7 @@ Author URL: https://themeforest.net/user/uigigs/portfolio
             var rotateIcon = comparePriceIcon.find(".rotate-icon");
             x = x - 400;
             if (y > x) {
-                rotateIcon.css("transform", "rotate(-90deg)");
+                rotateIcon.css("transform", "rotate(90deg)");
             } else {
                 rotateIcon.css("transform", "rotate(0deg)");
             }

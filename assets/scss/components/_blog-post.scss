@@ -84,6 +84,9 @@
             align-items: center;
             justify-content: flex-start;
             gap: 10px;
+            span {
+                font-weight: 700;
+            }
             .user-img {
                 height: 36px;
                 width: 36px;
@@ -97,6 +100,9 @@
                     width: 100%;
                 }
             }
+        }
+        .blog-date {
+            color: #999999;
         }
     }
 }

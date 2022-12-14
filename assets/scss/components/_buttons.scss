@@ -69,26 +69,9 @@
         z-index: 0;
         overflow: hidden;
         @include btnInnerStyle();
-
-        &::before {
-            position: absolute;
-            z-index: -1;
-            content: "";
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 50px;
-            background: rgba(0, 0, 0, 0.1);
-            transform: translateX(-100%);
-            transition: 0.3s;
-        }
         &:hover,
         &:focus {
             background: color(primary);
-            &::before {
-                transform: translateX(0%);
-            }
             @include hoverBtnInnerStyle();
         }
     }
@@ -98,7 +81,6 @@
         transition: 0.3s;
         overflow: hidden;
         @include btnInnerStyle();
-
         &:hover,
         &:focus {
             border: 1px solid transparent;
@@ -251,12 +233,7 @@
 
     &:hover,
     &:focus {
-        background-color: color(primary);
-        color: color(whiteColor) !important;
         @include hoverBtnInnerStyle();
-        span {
-            color: color(whiteColor);
-        }
     }
 }
 
@@ -356,7 +333,6 @@
     &:hover,
     &:focus {
         color: color(whiteColor);
-        background: #0086e5;
         @include hoverBtnInnerStyle();
     }
 }
@@ -455,6 +431,7 @@
     color: color(title) !important;
     position: relative;
     overflow: hidden;
+    font-weight: 700;
     img {
         filter: brightness(0);
         margin-left: 10px;
